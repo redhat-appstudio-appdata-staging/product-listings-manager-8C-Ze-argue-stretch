@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: product-listings-manager
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: product-listings-manager
+    app.kubernetes.io/part-of: product-listings-manager
+  name: product-listings-manager
+spec:
+  ports:
+  - port: 5000
+    targetPort: 5000
+  selector:
+    app.kubernetes.io/instance: product-listings-manager
+status:
+  loadBalancer: {}
