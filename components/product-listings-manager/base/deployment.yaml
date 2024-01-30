@@ -26,7 +26,7 @@ spec:
       - env:
         - name: SQLALCHEMY_DATABASE_URI
           value: 'sqlite://:memory:'
-        image: image
+        image: quay.io/redhat-user-workloads-stage/lholecek-tenant/product-listings-manager/product-listings-manager@sha256:3b20492913dee572ec6942ed216275e726750f9f7a8a9547cc43c37806ebee49
         imagePullPolicy: Always
         name: container-image
         ports:
