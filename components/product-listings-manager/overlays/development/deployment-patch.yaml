@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: product-listings-manager
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/lholecek-tenant/product-listings-manager/product-listings-manager@sha256:3b20492913dee572ec6942ed216275e726750f9f7a8a9547cc43c37806ebee49
+        name: container-image
+        resources: {}
+status: {}
